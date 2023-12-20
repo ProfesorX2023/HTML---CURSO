@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>¿Cómo crear Formularios?</h1>
+    <form action=""method="post" enctype="multipart/form-data">
+        <label for="suNumbre">Nombre</label>
+        <input 
+        type="text"
+        id="suNombre"
+        size="50"
+        autocomplete="off"
+        autofocus
+        maxlength="10"
+        required
+        placeholder="Aquí puede insertar nombre"
+        >
+        <br><br>
+        <label for="suDireccion">Direcion</label>
+        <input 
+        type="text"
+        name="Direcion"
+        id="suDireccion"
+        size="50"
+        autocomplete="off"
+        placeholder="Ej.: Calle, numero de casa o apt. Ciudad"
+        disabled
+        >
+        <br><br>
+        <label for="suEmail">Email</label>
+        <input 
+        type="email"
+        name="correoElectronico"
+        id="suEmail"
+        size="50"
+        >
+        <br><br>
+        <label for="suContrasena">Contraseña</label>
+        <input 
+        type="password"
+        name="contrasena"
+        id="suContrasena"
+        size="50"
+        >
+        <br><br>
+        <label for="suDireccionWeb">Direccion Web</label>
+        <input 
+        type="url"
+        name="direccion_web"
+        id="suDireccionWeb"
+        size="50">
+        <br><br>
+
+        Edad <br>
+        <input type="radio" name="edad_usuario" value="menor18"> Menor de 18 <br>
+        <input type="radio" name="edad_usuario" value="adulto"> Entre 18 y 60 años <br>
+        <input type="radio" name="edad_usuario" value="Tercera edad"> Mayor de 60 años <br>
+        <br>
+        Pasatiempos <br>
+        <input type="checkbox" name="pasatiempo1" value="Leer"> Lectura<br>
+        <input type="checkbox" name="pasatiempo2" value="deportes"> Hacer Deportes <br>
+        <input type="checkbox" name="pasatiempo3" value="musica"> Escuchar Música<br>
+        <input type="checkbox" name="pasatiempo4" value="otro"> otros <br>
+    
+        canditadad <input type="number" name="cantidad"value="1" min="0"max='30' step="3">
+        <br><br>
+        <label for="fecha">Fecha de Nacimiento</label>
+        <input type="date" name="fecha_nacimiento" id="fecha" size="50">
+        <br><br>
+        Define un Rango <input type="range" name="rangos" size="10">
+        <br><br>
+
+        Buscar: <input type="search" name="buscador" placeholder="Burcar pelicula ...">
+        <br><br>
+
+        Pais: <br>
+        <select name="pais[]" multiple>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="EUA">Estados Unidos</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Panama">Panama</option>
+            <option value="Venezuela">Venezuela</option>
+        </select>
+
+        
+    </form>
+</body>
+</html>
