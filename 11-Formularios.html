@@ -78,7 +78,7 @@
         <br><br>
 
         Pais: <br>
-        <select name="pais[]" multiple>
+        <select name="pais[s]" multiple>
             <option value="Guatemala">Guatemala</option>
             <option value="Chile">Chile</option>
             <option value="Colombia">Colombia</option>
@@ -87,8 +87,17 @@
             <option value="Panama">Panama</option>
             <option value="Venezuela">Venezuela</option>
         </select>
-
-        
+        <br><br>
+        Comentario <br>
+        <textarea type="mensaje" cols="30" rows="10"></textarea>
+        <br>
+        <!-- Boton para enviar datos -->
+        <input type="submit" name="Enviar_datos" value="Enviar Formulario">
+        <br>
+        <!-- Boton para resetear datos -->
+        <input type="reset" name="limpiar_campos" value="resetear Formulario">
+        <br>
+        <button type="button">Es un boton</button>
     </form>
 </body>
 </html>
