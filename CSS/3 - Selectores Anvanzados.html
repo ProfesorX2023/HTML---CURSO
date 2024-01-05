@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Avanzados</title>
+    <style>
+        /* Selector multiple */
+        
+        *{
+            margin: 50;
+            padding: 50;
+        }
+
+        /* Selecto múltiple */
+
+        h2, #intro{
+            font-size: 25px;
+        }
+
+        /* Selector Descendiente */
+        div p{
+            background-color: blue;
+            color: white;
+        }
+
+        /* Selectore hijos */
+        ol > li{
+            color: #ff0000;
+        }
+
+        /* Selectores adyacentes */
+
+        div + p{
+            font-size: 25px;
+        }
+
+        /* Selector Hermano General */
+        div ~ p{
+            font-size: 25px;
+        }
+        /* Selectores de atributos [atr] */
+        a[target]{
+            color: green;
+        }
+
+        /* selector de atributos [atr="valor"] */
+        a[target="_self"]{
+            color: red;
+        }
+
+        /* Selector de atributos [atr^="valor"] */
+        p[class^="destacado"]{
+            background-color: darkorange;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Esto es un encabezado de nivel 1</h1>
+    <p id="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio veniam distinctio iure enim sed, quos perspiciatis accusantium sequi ipsum corporis quo odio recusandae tempore! Sapiente voluptatibus ex odit porro est.</p>
+    <a href="#">Leer más...</a>
+
+    <h2>Esto es un encabezado de nivel 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fuga, illum, veritatis distinctio quis enim suscipit natus maiores cupiditate nulla et sed asperiores laudantium illo voluptatem, aperiam voluptatum totam cum.</p>
+    
+    <div>
+        <h2>Esto es un encabezado de nivel 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, provident. Doloribus quisquam minima aut, facere ex libero maiores deserunt alias reiciendis tempore obcaecati expedita at sint accusantium sunt numquam illo.</p>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sint ab possimus veritatis provident ipsam velit harum similique, libero perferendis adipisci quos, sed sit illo ratione, aspernatur fuga mollitia molestias?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aperiam repellendus veritatis reprehenderit, perferendis atque saepe dolores velit! Ex consequuntur quod exercitationem distinctio, iusto labore nemo autem a consectetur nostrum.</p>
+    
+    <ol>
+        <li>Vegetales</li>
+        <li>Frutas</li>
+        <ul>
+            <li>Manzanas</li>
+            <li>Uvas</li>
+            <li>Fresas</li>
+        </ul>
+        <li>Verduras</li>
+    </ol>
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+    <a href="#">Enlace 3</a>
+    <p class="destacado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi cupiditate reiciendis minima tenetur ex, veniam vitae eaque maiores? Omnis quidem eligendi tempore adipisci velit autem fuga soluta porro iste?</p>
+    <p class="destacado principal">Suscipit libero quam odio vitae commodi nesciunt perspiciatis similique voluptates atque vero dolores adipisci consequuntur, vel excepturi iure. Dolorem laborum cumque perferendis porro eius magni earum ut autem doloribus tempore.</p>
+    <p class="texto-destacado principal">Numquam est dolore delectus fugit. Veniam quidem sint sunt dolorum, quasi facere quos magnam animi nihil sequi iusto praesentium reiciendis fugiat consequuntur dignissimos aliquid? Ab ipsam quis voluptas consectetur esse!</p>
+    <p class="texto-destacado">Assumenda quod id, inventore quidem sint, corrupti est ut excepturi odio doloribus culpa dolor fuga distinctio, voluptas ex soluta quisquam reiciendis suscipit! Quas voluptatum repellendus ipsam quibusdam corrupti laboriosam dolores.</p>
+    <br>
+    <a href="https://google.com">Google</a><br>
+    <a href="https://yahoo.com">Yahoo</a><br>
+    <a href="https://google.com">Google</a><br>
+    <a href="https://yahoo.com">Yahoo</a><br>
+    <br>
+    <ul>
+        <li>Curso de PHP</li>
+        <li>Curso de C++</li>
+        <li>Curso de Javascipt</li>
+        <li>Aprende HTML</li>
+    </ul>
+</body>
+</html>
