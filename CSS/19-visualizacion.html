@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Display y Visibility</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        /* Ocultar Elementos */
+
+        #texto-invisible{
+            visibility: hidden;
+        }
+
+        #ocultar-texto{
+            color: #ff0000;
+            display: none;
+        }
+
+        /* Modificar el comportamiento de los elementos con la propiedad Display */
+
+        a{
+            background-color: #0000ff;
+            color: #fff;
+            width: 230px;
+            height: 42px;
+            margin: 12px 0;
+            display: block;
+        }
+
+        .caja{
+            background-color: #0000ff;
+            color: #fff;
+            width: 800px;
+            height: 130px;
+            margin: 20px 0;
+            display: inline;
+        }
+
+        li{
+            background-color: aquamarine;
+        }
+
+        .enLineaBloque{
+            background-color: #008000;
+            border: 1px solid;
+            color: #fff;
+            width: 25%;
+            height: 145%;
+            padding: 5px 0;
+            margin: 4px 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Cómo controlar la visualización de elementos?</h1>
+    <h2>Propiedad Visibility</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit fugiat repellat quis! Et quaerat dolores quo repellat ullam odio amet non optio cumque placeat? Eum sequi nesciunt minus nemo.</p>
+    <p id="texto-invisible">Ducimus, soluta delectus? Dolor, modi temporibus voluptates sit minus ab ea suscipit quis reprehenderit pariatur delectus ipsa maiores in, officia aperiam incidunt. Veniam explicabo facilis doloremque deleniti, nihil iusto consectetur.</p>
+    <p>Voluptatum molestias itaque et nam. Beatae, minima rem nisi porro commodi iure! Voluptatum, perferendis sit earum in fugiat, natus veniam possimus unde excepturi quis laboriosam amet ullam, distinctio cumque. Eligendi?</p>
+
+    <h2>Propiedad display: none</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores amet ipsam pariatur magni? Autem repellendus consectetur labore ea! Sint ut porro non temporibus deleniti quaerat minima soluta provident? Ratione.</p>
+    <p id="ocultar-texto">Necessitatibus quidem, vitae vel illo aperiam inventore quam quod, deserunt maiores mollitia molestiae ut itaque magni repellat fugiat quibusdam fugit cum alias? Beatae sit a veritatis nihil? Aliquid, enim saepe.</p>
+    <p>Aliquam, provident, dolores culpa atque distinctio quibusdam cum harum laudantium esse doloremque natus quaerat iure, eligendi quo suscipit quam ducimus totam illo consequatur voluptatibus velit excepturi dicta assumenda repellendus. Doloribus!</p>
+
+    <h2>Propiedad Display: block</h2>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+
+    <h2>Propiedad Display: inline</h2>
+    <div class="caja">Ejemplo 1</div>
+    <div class="caja">Ejemplo 2</div>
+    <div class="caja">Ejemplo 3</div>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <h2>Propiedad display: inline-block</h2>
+    <span class="enLineaBloque">Caja 1</span>
+    <span class="enLineaBloque">Caja 2</span>
+    <span class="enLineaBloque">Caja 3</span>
+</body>
+</html>

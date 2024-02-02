@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo trabajar con contenidos que se desbordan</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        #contenedor{
+            background-color: gold;
+            width: 550px;
+            height: 200px;
+            border: 5px solid orange;
+            padding: 5px 20px;
+            overflow-y: scroll;
+            overflow-x: scroll;
+        }
+
+        #caja{
+            background-color: #ccc;
+            width: 643px;
+            height: 150px;
+        }
+
+        /* Maquetar una paginación simple */
+        #paginacion{
+            background-color: #ccc;
+            width: 50%;
+            padding: 12px;
+            overflow: hidden;
+        }
+
+        #paginacion-izquierda{
+            float: left;
+        }
+
+        #paginacion-derecha{
+            float: right;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- <div id="contenedor">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam cumque aliquam dicta consequatur itaque dolorem dolore. Expedita doloremque similique sed earum alias rerum labore dolore mollitia. Quibusdam suscipit molestiae fuga?</p>
+        <p>Doloremque adipisci officia maxime fuga ipsa non cupiditate. Vel labore ut quibusdam nulla ipsum quis dolore aperiam porro saepe quas, veritatis, iusto molestiae architecto, praesentium necessitatibus culpa officiis sint quam?</p>
+        <p>Nemo odio nobis necessitatibus! Voluptatum quas optio perspiciatis aut dicta architecto molestiae maxime alias hic dolorem dolore obcaecati, fugiat veniam saepe consequuntur nemo cupiditate. Quia expedita officiis cupiditate cumque fugit.</p>
+
+
+    </div>
+
+    <div id="caja">
+
+    </div> -->
+
+    <div id="paginacion">
+        <div id="paginacion-izquierda">Anterior</div>
+        <div id="paginacion-derecha">Siguiente</div>
+    </div>
+</body>
+</html>
